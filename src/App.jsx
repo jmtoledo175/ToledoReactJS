@@ -1,13 +1,12 @@
-import "./App.css";
-
-import NavBar from "./components/navBar";
+import React from "react";
+import NavBar from "./components/Navbar/Navbar";
+import ItemListConteiner from "./components/ItemListConteiner/ItemListConteiner";
 
 function App() {
   return (
     <div>
       <NavBar />
-      <h1>Mi Aplicación React</h1>
-      {}
+      <ItemListConteiner greeting={"Bienvenidos"} />
     </div>
   );
 }
