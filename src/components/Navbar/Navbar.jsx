@@ -6,8 +6,8 @@ function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Navbar
+        <a className="navbar-brand" href="/">
+          Ecommerce
         </a>
         <button
           className="navbar-toggler"
@@ -23,7 +23,7 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarText">
         <section >
                 <Link to='/category/celular' className='btn btn-outline-primary'>Celulares</Link>
-                <Link to='/category/tablet' className='btn btn-outline-primary'>Tablets</Link>
+                <Link to='/category/ipad' className='btn btn-outline-primary'>Ipad</Link>
                 <Link to='/category/notebook' className='btn btn-outline-primary'>Notebook</Link>
             </section>
             

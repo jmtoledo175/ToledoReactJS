@@ -35,6 +35,24 @@ const products = [
         stock: 25,
         description: "Iphone 13 pro"
     },
+    {
+        id: "5",
+        name: "Macbook Air",
+        price: 1500,
+        category: "notebook",
+        img: "https://www.sagitariodigital.com.ar/wp-content/uploads/2021/03/apple_z12b_mgne_04_bh_13_3_macbook_air_with_1605033014_1604864.jpg" ,
+        stock: 25,
+        description: "CPU Apple M1 de 8 núcleos, 8GB de RAM unificada | Pantalla IPS Retina de 13,3 2560 x 1600, GPU de 7 núcleos | Motor neuronal de 16 núcleos"
+    },
+    {
+        id: "6",
+        name: "Ipad Air",
+        price: 1500,
+        category: "ipad",
+        img: "https://www.apple.com/v/ipad-air/t/images/overview/design/colors_ipad_3__c3iufslzn3au_large.jpg" ,
+        stock: 25,
+        description: "12MP Ultra Wide front camera with Center Stage."
+    },
 ]
 
 export const getProducts = () => {
