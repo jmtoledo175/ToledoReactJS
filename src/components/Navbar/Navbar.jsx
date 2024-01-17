@@ -1,39 +1,31 @@
 import React from "react";
+import "./Navbar.css"
 import Cartwidget from "../Cartwidget/Cartwidget";
-import "bootstrap/dist/css/bootstrap.css";
+
 import { Link } from "react-router-dom";
 function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          Ecommerce
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarText">
-        <section >
-                <Link to='/category/celular' className='btn btn-outline-primary'>Celulares</Link>
-                <Link to='/category/ipad' className='btn btn-outline-primary'>Ipad</Link>
-                <Link to='/category/notebook' className='btn btn-outline-primary'>Notebook</Link>
-            </section>
-            
-              <Cartwidget />
+   
+
+<nav>
+  <div className="wrapper">
+    <div className="logo"><a href="/">Ecommerce</a></div>
+    <input type="radio" name="slider" id="menu-btn" />
+    <input type="radio" name="slider" id="close-btn" />
+    <ul className="nav-links">
+      <label htmlFor="close-btn" className="btn close-btn"><i className="fas fa-times"></i></label>
+      <li><Link to='/category/celular'>Celulares</Link></li>
+      <li><Link to='/category/ipad'>Ipad</Link></li>
+      <li><Link to='/category/notebook'>Notebook</Link></li>
+      <li> <Cartwidget /></li>
+    </ul>
+   
+    <label htmlFor="menu-btn" className="btn menu-btn"><i className="fas fa-bars"></i></label>
+  </div>
+</nav>
+);
 
 
-        </div>
-      </div>
-    </nav>
-  );
 }
 
 export default NavBar;
