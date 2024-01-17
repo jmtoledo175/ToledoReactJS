@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 
 const Cart = () => {
-    const { cart, total, removeItem, quantity } = useCart()
-console.log
+    const { cart, total, removeItem} = useCart()
+
     return (
         <>
             <h1>CARRITO</h1>

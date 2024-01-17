@@ -11,7 +11,7 @@ export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([])
     const addItem = (productToAdd) => {
         if (!isInCart(productToAdd.id)) {
-          const itemToAdd = { ...productToAdd, quantity: 1 };
+          const itemToAdd = { ...productToAdd, quantity: productToAdd.quantity };
           setCart((prev) => [...prev, itemToAdd]);
         } else {
           console.error("El producto ya está agregado");
