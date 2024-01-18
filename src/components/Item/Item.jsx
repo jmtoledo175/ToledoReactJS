@@ -5,7 +5,7 @@ const Item = ({ id, name, img, price, stock }) => {
     <div className="container"> 
     <div className="wrapper">
       <img src={img} alt="Product" className="img-responsive" />
-      <h1>{name}</h1>
+      <h1 className="name">{name}</h1>
       <p>Precio: ${price}<br/>
         Stock: {stock}</p>
     </div>

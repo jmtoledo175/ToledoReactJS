@@ -2,7 +2,8 @@ import {useContext, useState} from "react"
 import {Link} from "react-router-dom"
 import "./ItemDetail.css"
 import { CartContext } from "../../context/CartContext";
-import { useCart } from '../../context/CartContext'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 const buttonStyle = {
   marginLeft: "10px", 
   marginRight: "10px",
@@ -68,6 +69,10 @@ const Item = ({ id, name, img, price, stock, description }) => {
     };
   
     addItem(item);
+    const MySwal = withReactContent(Swal)
+    MySwal.fire({
+      title: ("Producto agregado")
+    })
   };
   return (
     <div className="container"> 

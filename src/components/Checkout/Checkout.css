@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+.loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh; /* Esto asegura que ocupe el 100% del alto de la pantalla */
+  }
+
+  .loading-text{
+    color: black;
+  }

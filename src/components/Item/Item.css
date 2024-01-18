@@ -27,7 +27,7 @@
     height: auto; 
 }
 
-h1 {
+.name {
     font-family: 'Righteous', sans-serif;
     color: rgba(255, 255, 255, 0.98);
     text-transform: uppercase;
